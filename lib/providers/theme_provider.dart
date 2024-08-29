@@ -6,6 +6,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 //async - await yapısını araştır.
 
 class ThemeProvider with ChangeNotifier{
+  // ignore: constant_identifier_names
   static const THEME_STATUS="THEME_STATUS";
   bool _darkTheme=false;
   bool get getIsDarkTheme=>_darkTheme;
@@ -20,7 +21,7 @@ class ThemeProvider with ChangeNotifier{
     _darkTheme=themeValue;
     notifyListeners();
   }
-
+  
   Future<bool> getTheme() async{
     SharedPreferences prefs=await SharedPreferences.getInstance();
     _darkTheme=prefs.getBool(THEME_STATUS)??false; // if else

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sevket_e_ticaret_projesi_2024/constants/app_colors.dart';
 import 'package:flutter_sevket_e_ticaret_projesi_2024/constants/theme_data.dart';
 import 'package:flutter_sevket_e_ticaret_projesi_2024/providers/theme_provider.dart';
 import 'package:flutter_sevket_e_ticaret_projesi_2024/screens/home_screen.dart';
